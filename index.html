@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran's Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            /* reset css  */
+            font-family: 'Mukta', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            color: white;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red;  */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+
+        .mid {
+            /* border: 2px solid red;  */
+            display: block;
+            width: 65%;
+            margin: 18px auto;
+            color: white;
+        }
+
+        .right {
+            position: absolute;
+            /* border: 2px solid red;  */
+            color: white;
+            display: inline-block;
+            right: 34px;
+            top: 20px;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            color: white;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            text-decoration: underline;
+            color: grey;
+
+        }
+        .left img{width: 76px;
+            /* filter function forf converting b lack image to white and vice versa  */
+            filter: invert(100%);
+        
+
+
+        }
+      .left div{
+        text-align: center;
+        font-size: 10px;
+        line-height: 19px;
+        font-size: 16px;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 16px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        margin: 106px 80px;
+        padding: 35px;
+        border: 2px solid white;
+        border-radius: 28px;
+        width: 55%;
+    }
+    .form-group input{
+        text-align: center;
+        display: block; 
+        width:300px ;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{display: block;
+        width: 23%;
+        margin: auto;
+    }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo  -->
+        <div class="left">
+            <img src="/download.png" alt="">
+            <div>Kiran's Fitness</div>
+        </div>
+
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active" >Home </a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us </a></li>
+            </ul>
+
+        </div>
+        </div>
+        <!-- right for button  -->
+        <div class="right">
+            <button class="btn">Call us</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of punjab now</h1>
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+        </div><div class="form-group">
+            <input type="text" name="" placeholder="Enter your Height">
+        </div><div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div><div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div><div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
